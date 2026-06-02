@@ -72,5 +72,45 @@ int index_r =username.find("r");
 cout<< "Index of letter r =" <<index_r<<endl;
 cout<< "Index of NEVER=" <<username.find("NEVER");
 cout<< "Index of NEVER=" <<never<<endl;
+
+cout<<"\n--- example 10: combinate mehtods --- " <<endl;
+//add strng m in username starting NEVER 
+cout<<m<<endl;
+//find the index for 123 
+int index123 = suername.find("123");
+//add value of string m before index123
+username.insert(index123,m);
+cout <<username<<endl;
+
+cout<<"\n --- practise exam 1 ----"<<endl;
+string  password  = "peterpan123";
+int a = password.length();
+int b = a- 2;
+password.replace(b,3,"NONE");
+cout<<n;
+
+cout << " LAB EXERCISE" <<endl;
+ //Ask user for a word 
+ string new_word;
+ cout<< "Type a word";
+ cin >> new_word;
+
+ //Print the 4th character 
+ cout<< "THe 4th character is :" <<new_word[3]<<endl;
+
+ //Find the print length 
+ int word_length = new_word.length();
+ cout<<"The length of the word is:"
+ << word_length<< "Characters." <<endl;
+
+ //Replace 3 characters startin from the 2nd character
+ new_word.replace(1, 3, "---$---");
+ cout<< "After replacement:" <<new_word<<endl;
+
+ //Remove 2 charcters from the end 
+ int end_index = new_word.length() -2;
+ new_word.erase(end_index, 2);
+ cout<< "After removing two charcters from the end:"
+<< new_word <<endl;
 return 0;
 }
