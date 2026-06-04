@@ -88,7 +88,7 @@ cout <<n<<" is an ODD number"<< endl;
 cout <<n<<(n%2==0)? "is an EVEN number ": "is an ODD number";
 
 cout<<"\n ---example 6: conditionl operator---"<<endl;
-//cehck if n is greateer than 10 , if n is greater than 10 , set the max value to n 
+//check if n is greateer than 10 , if n is greater than 10 , set the max value to n 
 int max =10;
 // conditional operands to check if n is greater than max 
 
@@ -137,7 +137,52 @@ else{
     cout <<"zero"endl;
 }
 cout <<"\n---LAB EXERCISE---"<<endl;
-return 0;
 
 
+     //LAB 7 Control Flow lab 
+     //  variables
+    float weight;
+    float shippingCost;
+
+    // collect package weight
+    cout << "Enter the weight of the package (lb): ";
+    cin >> weight;
+
+    // determine shipping cost
+    if (weight <= 0) {
+       
+       
+        shippingCost = 0.0;
+    }
+    
+    
+    else if (weight <= 2) {
+        
+        
+        shippingCost = 5.00;
+    }
+    else if (weight <= 5) {
+        shippingCost = 8.20;
+    }
+    else if (weight <= 10) {
+        
+        
+        shippingCost = 10.25;
+    }
+    else {
+       
+        shippingCost = 12.50;
+    
+    }
+
+    // display result
+    cout << "A package of weight "
+         << weight
+         << " lb costs $"
+         << shippingCost
+         << endl;
+
+    return 0;
 }
+
+
