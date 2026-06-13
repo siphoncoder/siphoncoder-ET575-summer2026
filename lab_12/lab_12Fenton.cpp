@@ -61,5 +61,58 @@ cout<<" . "
 
 cout<<endl; 
 
-return 0; 
+cout<< "|\n---Lab A exercise "<<endl;
+const int GUESS = 5;
+    int number;
+
+    cout << "Guess a number between 1 and 10: ";
+    cin >> number;
+
+    while (number != GUESS)
+    {
+        // Validate range
+        while (number < 1 || number > 10)
+        {
+            cout << "Invalid number! Enter a number between 1 and 10: ";
+            cin >> number;
+        }
+
+        if (number > GUESS)
+        {
+            cout << "The entered number is high." << endl;
+        }
+        else if (number < GUESS)
+        {
+            cout << "The entered number is low." << endl;
+        }
+
+        cout << "Try again: ";
+        cin >> number;
+    }
+
+    cout << "Correct! You guessed the number." << endl;
+cout << "\n----Lab B Exercise ---" <<endl;
+
+for (int row = 1; row <= 10; row++)
+    {
+        for (int col = 1; col <= 10; col++)
+        {
+            if (
+         (col == 3 || col == 4) && (row >= 3 && row <= 8) ||
+       (col == 7 || col == 8) && (row >= 3 && row <= 8) ||
+      (col == 5 || col == 6) && (row >= 7 && row <= 10)
+               )
+        {
+         cout << "% ";
+        }
+           else
+            {
+                cout << ". ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
 }
